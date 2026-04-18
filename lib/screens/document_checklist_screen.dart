@@ -121,7 +121,7 @@ class _DocumentChecklistScreenState extends State<DocumentChecklistScreen> {
   Widget build(BuildContext context) {
     final checkedCount = documents.where((d) => d.checked).length;
     final totalCount = documents.length;
-    final progress = totalCount > 0 ? checkedCount / totalCount : 0;
+    final  progress = totalCount > 0 ? checkedCount / totalCount : 0.0;
 
     return Column(
       children: [
